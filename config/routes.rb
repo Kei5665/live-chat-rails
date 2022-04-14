@@ -4,4 +4,6 @@ Rails.application.routes.draw do
     registrations: 'auth/registrations'
   }
   ## ====== 👆 ここまで変更する=======
+
+  resources :messages, only: ['index']
 end
